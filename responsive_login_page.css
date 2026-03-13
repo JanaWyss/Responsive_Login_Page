@@ -1,0 +1,67 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* Flex-Container für Header, Content, Footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  height: 50px;
+  color: #ffffff;
+  background-color: #b887b1;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Content oben beginnen */
+  align-items: center;         /* zentriert horizontal */
+  background-color: #f7f7f7;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;   /* Elemente untereinander */
+  justify-content: flex-start;
+  align-items: stretch;     /* Inputs füllen die Box-Breite */
+  gap: 15px;
+  padding: 30px;
+  border: 5px solid #b887b1;
+  border-radius: 12px;
+  width: 300px;             /* feste Breite */
+  background-color: #ffffff;
+}
+
+.login-box input + input {
+  margin-top: 10px;
+}
+
+.login-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 80px;
+  font-size: 14px;
+}
+
+.login-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 80px;
+  background-color: #b887b1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover-Effekt */
+.login-box button:hover {
+  background-color: #9c6a96;
+  transform: scale(1.05);
+}
