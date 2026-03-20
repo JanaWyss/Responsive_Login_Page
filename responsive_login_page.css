@@ -65,3 +65,13 @@ body {
   background-color: #9c6a96;
   transform: scale(1.05);
 }
+
+#submitButton:disabled {
+  background-color: grey;
+  border: 1px solid grey;
+  cursor: not-allowed;
+}
+
+#firstName {
+  margin-bottom: 10px;
+}
