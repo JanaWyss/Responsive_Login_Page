@@ -13,11 +13,15 @@
     <div class="content">
       <div class="login-box">
         <h2>Login</h2>
-        <form>
-          <input type="text" placeholder="Vorname" required>
-          <input type="text" placeholder="Nachname" required>
-          <button type="submit">Absenden</button>
-        </form>
+        <form id="myForm">
+  <label for="firstName">Vorname:</label>
+  <input type="text" id="firstName" name="firstName" />
+
+  <label for="lastName">Nachname:</label>
+  <input type="text" id="lastName" name="lastName" />
+
+  <button id="submitButton" type="submit">Absenden</button>
+</form>
       </div>
 
       <p>
